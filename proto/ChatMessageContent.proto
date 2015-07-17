@@ -1,0 +1,59 @@
+package com.huanyou.protobuf;
+
+option java_package = "server.util.protobuf";
+option optimize_for = SPEED;
+
+//注释格式：(msgid)方向：说明
+
+//(1720)客户端->服务器：进入聊天频道;
+message EnterChatChannelReq{
+	required int32 channelID=1;//要进入的频道id:默认为:0,目前只有一个频道0
+}
+
+//(1721)serve->client:进入频道信息 ;
+message EnterChatChannelRes{
+    required int32 channelID=1;
+	required int32 status=2;               //0：成功;1:进入失败，超过最大人数
+	repeated ChatUser onlineUserList=3;   //在线用户列表
+	repeated OneChat recentChatList=4; //最近聊天内容列表
+}
+
+//(1723)client->server：发送聊天
+message SendChatReq{
+    required int32 channelID=1;
+	required string content=2;
+	optional ChatUser toUser=3;	
+	required int32 chatType=4;  //0:普通；1:系统	
+}
+//(1724)server->client：广播聊天
+message ChatBroadCastRes{
+    required int32 channelID=1;
+	required ChatUser fromUser=2;	
+	required string content=3;
+	optional ChatUser toUser=4;	
+	required int32 chatType=5;  //0:普通；1:系统	
+	
+}
+
+//(1725)server->client：客户端收到用户上线或下线通知
+message UserOnlineStatusRes{
+    required int32 channelID=1;
+	required ChatUser user=2;	
+	required bool online=3;  //true:上线; false:下线
+}
+
+
+
+message ChatUser{
+	required int32  userid=1;
+	optional string  username=2;
+	required bool sex=3;
+	
+}
+//一条聊天信息
+message OneChat{
+    required int32 channelID=1;
+	required int32  fromUserid=2;
+	required string  content=3;
+	required int32 chatType=4;  //0:普通；1:系统	
+}
