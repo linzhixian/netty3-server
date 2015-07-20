@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/lol/!svn/ver/68/server/netty3-server/src/test/java/lolclient/message
+END
+UserOnlineStatusRes.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lol/!svn/ver/69/server/netty3-server/src/test/java/lolclient/message/UserOnlineStatusRes.java
+END
+SendChatReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lol/!svn/ver/68/server/netty3-server/src/test/java/lolclient/message/SendChatReq.java
+END
+EnterChatChannelRes.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lol/!svn/ver/68/server/netty3-server/src/test/java/lolclient/message/EnterChatChannelRes.java
+END
+EnterChatChannelReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lol/!svn/ver/68/server/netty3-server/src/test/java/lolclient/message/EnterChatChannelReq.java
+END
+ChatBroadCastRes.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lol/!svn/ver/68/server/netty3-server/src/test/java/lolclient/message/ChatBroadCastRes.java
+END
+LoginReq.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lol/!svn/ver/613/server/netty3-server/src/test/java/lolclient/message/LoginReq.java
+END
+ChatUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lol/!svn/ver/68/server/netty3-server/src/test/java/lolclient/message/ChatUser.java
+END
+LoginSucessRes.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lol/!svn/ver/68/server/netty3-server/src/test/java/lolclient/message/LoginSucessRes.java
+END

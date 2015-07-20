@@ -1,0 +1,8 @@
+
+protoc -I=proto --java_out=src/test/java proto/*.proto
+
+
+protoc -I=proto --java_out=src/main/java src/test/resourcproto/*.proto
+protoc.exe --plugin=protoc-gen-as3="as_plugin\protoc-gen-as3.bat" --as3_out=proto_as3 proto/*.proto
+
+protoc --plugin=protoc-gen-as3="as_plugin\protoc-gen-as3.bat" --as3_out=as3_proto_out  proto/*.proto
